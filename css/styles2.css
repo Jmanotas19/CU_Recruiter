@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../images/cu_bg_index.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .header-logo {
+    width: 80px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #002868;
+}
+
+nav ul li a:active {
+    background-color: silver;
+}
+
+nav ul li.active a {
+    background-color: #fff;
+    color: #002868;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 140px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.6s;
+}
+
+.content h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+/* === button === */
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    padding: 15px 50px;
+    border-radius: 60px;
+    transition: 0.6s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0px 10px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #002868;
+}
+
+/* === main === */
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #F5F5F5;
+    padding: 150px;
+    border-radius: 10px;
+    max-width: 100%; /* Para que ocupe todo el ancho disponible */
+    width: 100%; /* Asegura que ocupe el 80% del ancho disponible */
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #002868;
+    margin-bottom: 20px;
+    top: 100px;
+    left: 50px;
+    max-width: 100%;
+    /* width: 50%; */
+    margin: auto;
+}
+
+.paragraph {
+    font-size: 18px;
+    color: #222;
+    line-height: 1.6;
+    left: 50px;
+    width: 100%;
+    margin: auto;
+    font-family: sans-serif;
+    padding: 15px 0px 0px;
+}
+
+/*========== footer ========== */
+
+.footer-logo{
+    max-width: 255px;
+    padding: 0px 0px 15px;
+}
+
+footer {
+    background-color: #212121;
+    color: #fff;
+    padding: 20px 10%;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para la primera columna (About) */
+.footer-about {
+    flex: 1 1 60%;
+    max-width: 60%;
+    margin-right: 20px;
+}
+
+/* Estilos para la segunda columna (Categories y Quick Links) */
+.footer-column {
+    flex: 1 1 35%;
+    max-width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-categories,
+.footer-links {
+    flex: 1;
+}
+
+/* Estilos para el bloque de derechos de autor */
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para la línea de división */
+.divider {
+    width: 40%; /* Ocupa todo el ancho del contenedor */
+    margin: 15px 0; /* Ajusta el margen superior e inferior según tus preferencias */
+    border: 1px solid #ccc; /* Color y estilo de borde de la línea */
+}
+
+/* Estilos para iconos */
+.footer-social ul {
+    list-style: none;
+}
+
+.footer-social li {
+    /* Aplica el padding solo a los íconos */
+    padding: 5px; /* Ajusta el padding según tus preferencias */
+    display: inline-block;
+    margin-right: 5px; /* Ajusta el espacio entre los íconos si es necesario */
+}
+
+.footer-social a img {
+    width: 30px; /* Ajusta el ancho de las imágenes de los íconos */
+}
+
+/* ============== */
+/* == about me == */
+/* ============== */
+
+/* Navbar styles */
+.hero-about_me {
+    background-color: #002868;
+    color: white;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* About Me section styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100%; /* Use min-height instead of height */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap when needed */
+    align-items: flex-start; /* Align items to the top of the container */
+    background-color: #f1f1f1;
+}
+
+.about-me-section {
+    flex: 1;
+    width: 70%; /* Adjust the width to make the "About Me" section smaller */
+    padding: 20px; /* Add some padding for better appearance */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.photo-section {
+    flex: 1;
+    width: 30%; /* Adjust the width to make space for the photo */
+    background-image: url('ruta/a/la/foto.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Center the contact form vertically and horizontally */
+.contact-form {
+    max-width: 400px;
+    margin: auto; /* Center the form horizontally and vertically */
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0 #ccc;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.contact-form h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-form form input,
+.contact-form form textarea,
+.contact-form form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form form button {
+    background-color: #DD022B;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form form button:active {
+    background-color: #c60024;
+}
+
+
+
+
+/* == media === */
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .footer-social img {
+        margin: 10px;
+        opacity: 0.7;
+        transition: opacity 0.1s ease;
+    }
+
+    .footer-social img:hover {
+        opacity: 1;
+    }
+}
+
+.footer-social img {
+    opacity: 0.5;
+    transition: opacity 0.1s ease;
+}
+
+footer img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
