@@ -34,7 +34,7 @@ li a {
 }
 
 li a:hover {
-    background-image: linear-gradient(#ffca00, #fbefbe);
+    background-image: linear-gradient(rgb(255, 202, 0), rgb(251, 239, 190));
     color: #091d3c;
     border-radius: 10px;
 }
