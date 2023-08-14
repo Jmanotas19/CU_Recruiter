@@ -14,30 +14,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hero-about_me" id="top">
+    <div class="main-nav-about_me" id="top">
         <nav class="main-nav">
-            <img src="images/cu_logo.png" class="header-logo">
+            <img class="logo" src="images/cu_logo.png">
+            <button class="hamburger-transparent-btn">
+                <img class="hamburger-btn" src="icons/hamburger-menu.svg" alt="hamburger-menu">
+            </button>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="index.html#events">EVENTS</a></li>
-                <li><a href="https://news.carolinau.edu/blog/" target="_blank">THE ROAR</a></li>
-                <li class="active"><a href="#" id="about_me" >ABOUT ME</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#my-roar">My Roar</a></li>
+                <li class="active"><a href="#" id="about_me" >About</a></li>
+                <li><a href="https://carolinau.edu/apply" target="_blank" class="apply-now-btn">Apply Now</a></li>
             </ul>
         </nav>
     </div>
     <section class="about-me-container">
-        <div class="paragraph">
+        <div>
             <h2>About Me</h2>
-            <p>Welcome to this platform! I am Daniela Velásquez, a dedicated recruiter representing Carolina University. My passion is supporting Colombian students in their pursuit of academic excellence in the United States. At Carolina University, we provide distinguished academic programs and a vibrant campus life, enriching the educational journey of our students.</p>
-            <p class="p2">Do not hesitate to reach out to me for any inquiries or assistance. I am here to serve as your steadfast guide throughout the admission process and address any questions that may arise.</p>
+            <p>I am Daniela Velásquez, a dedicated recruiter representing Carolina University. My passion is supporting Colombian students in their pursuit of academic excellence in the United States. At Carolina University, we provide distinguished academic programs and a vibrant campus life, enriching the educational journey of our students.</p>
+            <p>Do not hesitate to reach out to me for any inquiries or assistance. I am here to serve as your steadfast guide throughout the admission process and address any questions that may arise.</p>
         </div>
         <div class="contact-form">
             <h2>Contact Me</h2>
             <form method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Type a Message" required></textarea>
+                <button type="submit">SUBMIT</button>
             </form>
         </div>
     </section>
@@ -50,7 +53,7 @@
                     <h3>About</h3>
                 <p>(+34) 300 335 3093</p>
                 <p>velasquezd@carolinau.edu</p>
-                <hr class="divider">
+                <hr>
                 <p>420 South Broad Street</p>
                 <p>Winston-Salem, NC 27101</p>
             </div>
@@ -76,9 +79,10 @@
             </div>
             <div class="footer-links">
                 <ul>
-                    <li><a href="#top">About Me</a></li>
-                    <li>Contact</li>
-                    <li>Privacy Policy</li>
+                    <a href="https://carolinau.edu/apply" target="_blank"><li>Apply Now</li></a>
+                    <a href="#"><li>About Me</li></a>
+                    <a href="index.html#my-roar"><li>My Roar</li></a>
+                    <a href="#"><li>Privacy Policy</li></a>
                 </ul>
             </div>
         </div>
